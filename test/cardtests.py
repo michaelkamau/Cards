@@ -70,9 +70,19 @@ class IndividualCardsTests(unittest.TestCase):
 
 class IndividualHandTests(unittest.TestCase):
     def test_can_create_hand_object(self):
+        """
+        Should be able to create an object of Hand class
+        """
         h = Hand()
         self.assertIsInstance(h, Hand)
 
+    def test_can_get_number_cards_at_hand(self):
+        """
+        Should be able to get number of cards at hand
+        """
+        g = Hand()
+        self.assertEqual(1, g.get_cards_held())
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     unittest.main()
