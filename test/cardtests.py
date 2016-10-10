@@ -51,3 +51,10 @@ class IndividualCardsTests(unittest.TestCase):
         """
         n = NumberCard(5,'Hearts')
         self.assertEqual('5 of Hearts', repr(n))
+
+    def test_string_repr_AceCard(self):
+        """
+        AceCard should have correct string repr
+        """
+        a = AceCard(1, 'Spades')
+        self.assertEqual('A of Spades', repr(a))
