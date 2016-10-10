@@ -84,5 +84,15 @@ class IndividualHandTests(unittest.TestCase):
         self.assertEqual(0, g.get_cards_held())
 
 
+    def test_can_add_cards_at_hand(self):
+        """
+        Should be able to add cards to Hand object
+        """
+        h = Hand()
+        s_card = NumberCard(5, 'Spades')
+        h.add_card(s_card)
+        self.assertEqual(1, h.get_cards_held())
+
+
 if __name__ == '__main__':
     unittest.main()
