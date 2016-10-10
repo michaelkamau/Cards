@@ -13,6 +13,6 @@ games:
   
   
 Using this general description, I have modelled a class structure that employs various principles of object oriented
-programming. See image below:
+programming. See image below: ![class uml diagram](class.png)
   
   
