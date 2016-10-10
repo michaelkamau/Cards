@@ -72,3 +72,7 @@ class IndividualHandTests(unittest.TestCase):
     def test_can_create_hand_object(self):
         h = Hand()
         self.assertIsInstance(h, Hand)
+
+
+if __name__ == "__main__":
+    unittest.main()
