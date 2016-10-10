@@ -93,6 +93,20 @@ class IndividualHandTests(unittest.TestCase):
         h.add_card(s_card)
         self.assertEqual(1, h.get_cards_held())
 
+    def test_can_remove_card_from_hand(self):
+        """
+        Should be able to remove a card from hand
+        """
+        h = Hand()
+        c1 = AceCard(1, 'Diamonds')
+        c2 = FaceCard(13, 'Diamonds')
+
+        h.add_card(c1)
+        h.add_card(c2)
+
+        h.remove_card(c2)
+
+        self.assertEqual(1, h.get_cards_held())
 
 if __name__ == '__main__':
     unittest.main()
