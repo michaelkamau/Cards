@@ -1,5 +1,7 @@
 import unittest
 from card_src.card import Card, AceCard, FaceCard, NumberCard
+from card_src.hand import Hand
+
 
 class IndividualCardsTests(unittest.TestCase):
     def test_can_create_card_object(self):
@@ -48,7 +50,7 @@ class IndividualCardsTests(unittest.TestCase):
         """
         NumberCard should have the correct string repr
         """
-        n = NumberCard(5,'Hearts')
+        n = NumberCard(5, 'Hearts')
         self.assertEqual('5 of Hearts', repr(n))
 
     def test_string_repr_AceCard(self):
@@ -64,6 +66,7 @@ class IndividualCardsTests(unittest.TestCase):
         """
         f = FaceCard(13, 'Diamonds')
         self.assertEqual('K of Diamonds', repr(f))
+
 
 class IndividualHandTests(unittest.TestCase):
     def test_can_create_hand_object(self):
