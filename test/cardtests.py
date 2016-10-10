@@ -81,7 +81,7 @@ class IndividualHandTests(unittest.TestCase):
         Should be able to get number of cards at hand
         """
         g = Hand()
-        self.assertEqual(1, g.get_cards_held())
+        self.assertEqual(0, g.get_cards_held())
 
 
 if __name__ == '__main__':
