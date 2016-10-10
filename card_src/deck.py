@@ -1,5 +1,5 @@
 from card_src.card import NumberCard, FaceCard, AceCard
-
+import random
 
 class Deck:
     def __init__(self):
@@ -19,3 +19,6 @@ class Deck:
 
     def deal(self):
         return self.cards.pop()
+
+    def shuffle(self):
+        random.shuffle(self.cards)
