@@ -125,5 +125,15 @@ class IndividualDeckTests(unittest.TestCase):
         d.init_with_cards()
         self.assertEqual(52, len(d.cards))
 
+    def test_can_deal_a_card(self):
+        """
+        Should be able to remove a card from deck
+        """
+        d = Deck()
+        d.init_with_cards()
+        new_card = d.deal()
+        self.assertEqual(51, len(d.cards))
+
+
 if __name__ == '__main__':
     unittest.main()

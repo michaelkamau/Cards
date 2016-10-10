@@ -16,3 +16,6 @@ class Deck:
                     self.cards.append(FaceCard(rank, suit))
                 else:
                     raise IndexError("Invalid rank!!")
+
+    def deal(self):
+        return self.cards.pop()
