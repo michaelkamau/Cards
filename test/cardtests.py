@@ -23,3 +23,10 @@ class IndividualCardsTests(unittest.TestCase):
         """
         face_card = FaceCard(11, 'Hearts')
         self.assertIsInstance(face_card, FaceCard)
+
+    def test_can_create_AceCard_object(self):
+        """
+        Should be able to create an object of Card class
+        """
+        ace_card = Card(1, 'Diamonds')
+        self.assertIsInstance(ace_card, AceCard)
