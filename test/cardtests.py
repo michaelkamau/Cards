@@ -1,7 +1,6 @@
 import unittest
 from card_src.card import Card, AceCard, FaceCard, NumberCard
 
-
 class IndividualCardsTests(unittest.TestCase):
     def test_can_create_card_object(self):
         """
@@ -65,3 +64,8 @@ class IndividualCardsTests(unittest.TestCase):
         """
         f = FaceCard(13, 'Diamonds')
         self.assertEqual('K of Diamonds', repr(f))
+
+class IndividualHandTests(unittest.TestCase):
+    def test_can_create_hand_object(self):
+        h = Hand()
+        self.assertIsInstance(h, Hand)
