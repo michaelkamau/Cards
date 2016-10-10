@@ -111,8 +111,19 @@ class IndividualHandTests(unittest.TestCase):
 
 class IndividualDeckTests(unittest.TestCase):
     def test_can_create_deck_object(self):
+        """
+        Should be able to create an instance of Deck class
+        """
         d = Deck()
         self.assertIsInstance(d, Deck)
+
+    def test_initialize_deck_with_cards(self):
+        """
+        Should be able to initialize a deck with 52 cards
+        """
+        d = Deck()
+        d.init_with_cards()
+        self.assertEqual(52, len(d.cards))
 
 if __name__ == '__main__':
     unittest.main()
