@@ -9,3 +9,10 @@ class IndividualCardsTests(unittest.TestCase):
         """
         spade_card = Card(4, 'Spade')
         self.assertIsInstance(spade_card, Card)
+
+    def test_can_create_NumberCard_object(self):
+        """
+        Should be able to create an object of Card class
+        """
+        spade_card = NumberCard(4, 'Spade')
+        self.assertIsInstance(spade_card, Card)
