@@ -1,7 +1,7 @@
 import unittest
 from card_src.card import Card, AceCard, FaceCard, NumberCard
 from card_src.hand import Hand
-
+from card_src.deck import Deck
 
 class IndividualCardsTests(unittest.TestCase):
     def test_can_create_card_object(self):
@@ -107,6 +107,12 @@ class IndividualHandTests(unittest.TestCase):
         h.remove_card(c2)
 
         self.assertEqual(1, h.get_cards_held())
+
+
+class IndividualDeckTests(unittest.TestCase):
+    def test_can_create_deck_object(self):
+        d = Deck()
+        self.assertIsInstance(d, Deck)
 
 if __name__ == '__main__':
     unittest.main()
