@@ -7,3 +7,6 @@ class Hand:
 
     def add_card(self, new_card):
         self.card_at_hand.append(new_card)
+
+    def remove_card(self, card):
+        self.card_at_hand.remove(card)
