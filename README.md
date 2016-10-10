@@ -14,5 +14,14 @@ games:
   
 Using this general description, I have modelled a class structure that employs various principles of object oriented
 programming. See image below: ![class uml diagram](class.png)
+
+Please check the [source files](card_src) for implementation details
+
+
+## Why am I doing this?
+
+This labs are part of the Andela boot-camp set of programming assignments, which am currently participating in.
+
+Feel free to comment on the code or ask any questions about the boot-camp.
   
   
