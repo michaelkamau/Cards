@@ -37,3 +37,17 @@ class IndividualCardsTests(unittest.TestCase):
         """
         a, b, c = (NumberCard(5, 'Diamonds'), FaceCard(12, 'Hearts'), AceCard(1, 'Spades'))
         self.assertIsInstance(a, Card) and self.assertIsInstance(b, Card) and self.assertIsInstance(c, Card)
+
+    def test_string_repr_for_card(self):
+        """
+        Should have the correct string repr
+        """
+        h = Card(4, "Spades")
+        self.assertEqual('4 of Spades', repr(h))
+
+    def test_string_repr_NumberCard(self):
+        """
+        NumberCard should have the correct string repr
+        """
+        n = NumberCard(5,'Hearts')
+        self.assertEqual('5 of Hearts', repr(n))
