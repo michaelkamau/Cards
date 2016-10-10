@@ -29,7 +29,7 @@ class IndividualCardsTests(unittest.TestCase):
         """
         Should be able to create an object of AceCard class
         """
-        ace_card = Card(1, 'Diamonds')
+        ace_card = AceCard(1, 'Diamonds')
         self.assertIsInstance(ace_card, AceCard)
 
     def test_subclasses_of_card_are_card_objects(self):
